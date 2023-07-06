@@ -28,8 +28,8 @@ public class ManagerRestController {
 
     @RequestMapping(value = "/managers/{id}", method = RequestMethod.GET)
     @ResponseBody
-    public String getAManager(@PathVariable("id") final Long id){
-        return "manager "+id;
+    public Manager getAManager(@PathVariable("id") final Long id){
+        return managerService.findById(id).get();
     }
 
     @RequestMapping(value = "/managers", method = RequestMethod.POST)

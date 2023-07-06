@@ -26,8 +26,8 @@ public class EmployeeRestController {
 
     @RequestMapping(value = "/employees/{id}", method = RequestMethod.GET)
     @ResponseBody
-    public String getAEmployee(@PathVariable("id") final Long id){
-        return "employee "+id;
+    public Employee getAEmployee(@PathVariable("id") final Long id){
+        return employeeService.findById(id).get();
     }
 
     @RequestMapping(value = "/employees", method = RequestMethod.POST)

@@ -32,7 +32,7 @@ public class Manager {
     private Long salary;
     private String email;
 
-    @OneToMany(mappedBy = "programManager")
+    @OneToMany(mappedBy = "programManager") // references java object field/property name
     private Set<Employee> subordinates;
 
 

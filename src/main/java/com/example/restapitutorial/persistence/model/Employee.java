@@ -36,7 +36,7 @@ public class Employee {
 
 
     @ManyToOne
-    @JoinColumn(name="manager_id")
+    @JoinColumn(name="manager_id") //references db column name
     private Manager programManager;
 }
 
