@@ -4,7 +4,6 @@ package com.example.restapitutorial.controllers;
 import com.example.restapitutorial.persistence.dto.ManagerDTO;
 import com.example.restapitutorial.persistence.model.Employee;
 import com.example.restapitutorial.persistence.model.Manager;
-import com.example.restapitutorial.services.EmployeeService;
 import com.example.restapitutorial.services.EmployeeServiceInterface;
 import com.example.restapitutorial.services.ManagerServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
