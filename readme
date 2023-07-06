@@ -1,1 +1,2 @@
-first commit file.
+this is an implementation of a CRUD interface for a two table one to may relationship, using spring JPA, and spring web modules.
+it is configured to run on the embedded h2 database. this can be re-configured in the application.properties file.
